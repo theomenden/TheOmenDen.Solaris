@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "solaris",
+  "version": "${version}",
+  "name": "Solaris",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/andre/TheOmenDen.Solaris"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/solaris/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.theomenden.solaris.client.SolarisClient"
+    ],
+    "main": [
+      "org.theomenden.solaris.Solaris"
+    ]
+  },
+  "mixins": [
+    "solaris.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
